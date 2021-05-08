@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F7F7FB"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:orientation="horizontal"
+        android:paddingStart="45dp"
+        android:paddingEnd="45dp">
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:letterSpacing="0.13"
+            android:text="@string/Skip"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+<!--    <ImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_marginTop="80dp"-->
+<!--        android:layout_marginEnd="64dp"-->
+<!--        android:src="@drawable/img_2" />-->
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        android:layout_width="370dp"
+        android:layout_height="327dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="50dp"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_name"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/working_man" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:fontFamily="sans-serif-condensed"
+        android:includeFontPadding="false"
+        android:letterSpacing="-0.01"
+        android:text="@string/Fast"
+
+        android:textColor="@android:color/black"
+        android:textSize="53sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="234dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-light"
+        android:letterSpacing="-0.01"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/secondPage_description"
+        android:textColor="#b5b5b5"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/circles_1" />
+
+
+</LinearLayout>

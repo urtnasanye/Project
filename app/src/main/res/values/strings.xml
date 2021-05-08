@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Liquid Swipe Test</string>
+    <string name="Skip">Алгасах</string>
+    <string name="Easy">Хялбар</string>
+    <string name="firstPage_description">Дэлхийн хаанаас ч хүссэн ажлын байраа олох боломж</string>
+    <string name="secondPage_description">Ухаалаг утасны тусламжтай хамгийн хурднаар ажлын байраа сонгох боломж</string>
+    <string name="All_in_one">Нэгдсэн зар</string>
+    <string name="Fast">Шуурхай</string>
+    <string name="thirdPage_description">Бүх төрлийн ажлын байрны зарыг нэг дороос хайх боломж</string>
+    <string name="splash_text">TeamProject</string>
+
+</resources>
