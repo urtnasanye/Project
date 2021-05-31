@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Menu_userPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        >
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie"
+            android:layout_width="390dp"
+            android:layout_height="match_parent"
+            android:elevation="2dp"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/app_name"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/lock_action" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/LoginPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Нэвтрэх"
+        android:layout_marginLeft="50dp"
+        android:textSize="16dp"
+        android:padding="10dp"
+        android:drawablePadding="25dp"
+        android:drawableStart="@drawable/user_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/RegisterPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Бүртгүүлэх"
+        android:textSize="16dp"
+        android:padding="10dp"
+        android:drawablePadding="25dp"
+        android:drawableStart="@drawable/register_icon"
+        android:layout_marginLeft="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Security"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Нууцлалын баталгаа"
+        android:layout_marginLeft="50dp"
+        android:textSize="16dp"
+        android:drawablePadding="25dp"
+        android:padding="10dp"
+        android:drawableStart="@drawable/security_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/Contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Холбоо барих"
+        android:textSize="16dp"
+        android:padding="10dp"
+        android:drawablePadding="25dp"
+        android:drawableStart="@drawable/call_icon"
+        android:layout_marginLeft="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</LinearLayout>
+</LinearLayout>

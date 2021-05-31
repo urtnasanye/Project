@@ -7,19 +7,48 @@
     android:layout_height="match_parent">
 
     <ImageView
+        android:id="@+id/user_back_img"
         android:layout_width="match_parent"
-        android:layout_height="500dp"
-        android:src="@drawable/login_background"
+        android:layout_height="510dp"
+        android:src="@drawable/all_register_back"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"/>
+
+    <ImageView
+        android:id="@+id/user_back_white_img"
+        android:layout_width="350dp"
+        android:layout_height="500dp"
+        android:src="@drawable/button_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.544">
 
     </ImageView>
 
 
+    <ImageView
+        android:id="@+id/backBtn"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/back_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
+
+
     <EditText
         android:id="@+id/password"
-        android:layout_width="170dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:background="@drawable/edit_text_bg"
         android:hint="Нууц үг"
@@ -27,19 +56,19 @@
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingBottom="11dp"
-        android:textColorHint="@color/white"
-        android:textSize="15dp"
+        android:textColorHint="@color/purple"
+        android:textSize="13dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintHorizontal_bias="0.155"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.523"
+        app:layout_constraintVertical_bias="0.543"
         app:layout_constraintWidth_percent=".8" />
 
     <EditText
         android:id="@+id/password_conf"
-        android:layout_width="170dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:background="@drawable/edit_text_bg"
         android:hint="Давтан оруулах"
@@ -47,39 +76,39 @@
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingBottom="11dp"
-        android:textColorHint="@color/white"
-        android:textSize="15dp"
+        android:textColorHint="@color/purple"
+        android:textSize="13dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.896"
+        app:layout_constraintHorizontal_bias="0.839"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.523"
+        app:layout_constraintVertical_bias="0.543"
         app:layout_constraintWidth_percent=".8" />
 
 
     <EditText
         android:id="@+id/gender"
-        android:layout_width="170dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:background="@drawable/edit_text_bg"
         android:hint="Хүйс"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingBottom="11dp"
-        android:textColorHint="@color/white"
-        android:textSize="15dp"
+        android:textColorHint="@color/purple"
+        android:textSize="13dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintHorizontal_bias="0.155"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.345"
+        app:layout_constraintVertical_bias="0.365"
         app:layout_constraintWidth_percent=".8" />
 
     <EditText
         android:id="@+id/lastName"
-        android:layout_width="170dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:background="@drawable/edit_text_bg"
         android:hint="Овог"
@@ -87,19 +116,19 @@
         android:paddingLeft="20dp"
         android:paddingTop="11dp"
         android:paddingBottom="10dp"
-        android:textColorHint="@color/white"
-        android:textSize="15dp"
+        android:textColorHint="@color/purple"
+        android:textSize="13dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintHorizontal_bias="0.155"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.243"
+        app:layout_constraintVertical_bias="0.275"
         app:layout_constraintWidth_percent=".8" />
 
     <EditText
         android:id="@+id/username"
-        android:layout_width="170dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:background="@drawable/edit_text_bg"
         android:hint="Нэр"
@@ -107,19 +136,19 @@
         android:paddingLeft="20dp"
         android:paddingTop="11dp"
         android:paddingBottom="10dp"
-        android:textColorHint="@color/white"
-        android:textSize="15dp"
+        android:textColorHint="@color/purple"
+        android:textSize="13dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintHorizontal_bias="0.839"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.243"
+        app:layout_constraintVertical_bias="0.275"
         app:layout_constraintWidth_percent=".8" />
 
     <EditText
         android:id="@+id/phoneNum"
-        android:layout_width="348dp"
+        android:layout_width="318dp"
         android:layout_height="wrap_content"
         android:background="@drawable/edit_text_bg"
         android:hint="Утасны дугаар"
@@ -127,19 +156,19 @@
         android:paddingLeft="20dp"
         android:paddingTop="11dp"
         android:paddingBottom="10dp"
-        android:textColorHint="@color/white"
-        android:textSize="15dp"
+        android:textColorHint="@color/purple"
+        android:textSize="13dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.432"
+        app:layout_constraintVertical_bias="0.452"
         app:layout_constraintWidth_percent=".8" />
 
     <EditText
         android:id="@+id/email"
-        android:layout_width="170dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:background="@drawable/edit_text_bg"
         android:hint="И-мэйл хаяг"
@@ -147,47 +176,61 @@
         android:paddingLeft="20dp"
         android:paddingTop="11dp"
         android:paddingBottom="10dp"
-        android:textColorHint="@color/white"
-        android:textSize="15dp"
+        android:textColorHint="@color/purple"
+        android:textSize="13dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.896"
+        app:layout_constraintHorizontal_bias="0.839"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.344"
+        app:layout_constraintVertical_bias="0.364"
         app:layout_constraintWidth_percent=".8" />
+
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="350dp"
-        android:layout_height="49dp"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
         android:background="@drawable/company_register_background"
-        android:text="Login"
+        android:text="Бүртгүүлэх"
         android:textColor="@color/white"
         android:textSize="16sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintHorizontal_bias="0.152"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.816"
+        app:layout_constraintVertical_bias="0.718"
         app:layout_constraintWidth_percent=".8" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="350dp"
-        android:layout_height="45dp"
-        android:background="@drawable/button_bg"
-        android:text="Та ажлын байр хайгч бол энд дарна уу"
-        android:textSize="10sp"
-        android:textColor="@color/black_30"
+        android:id="@+id/company_login"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:background="@drawable/purple_btn"
+        android:text="Нэвтрэх"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintHorizontal_bias="0.839"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.938"
+        app:layout_constraintVertical_bias="0.718"
+        app:layout_constraintWidth_percent=".8" />
+
+    <TextView
+        android:id="@+id/RegisterUserBtn"
+        android:layout_width="185dp"
+        android:layout_height="15dp"
+        android:text="Та ажлын байр хайгч бол энд дарна уу"
+        android:textColor="@color/gray"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.830"
         app:layout_constraintWidth_percent=".8" />
 
     <Switch
@@ -195,31 +238,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Үйлчилгээний нөхцөл"
-        android:textColor="@color/white"
+        android:textColor="@color/purple"
         android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.893"
+        app:layout_constraintHorizontal_bias="0.817"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.594" />
+        app:layout_constraintVertical_bias="0.615" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ажил олгогч"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.094" />
-
-
+        app:layout_constraintVertical_bias="0.041" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

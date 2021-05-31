@@ -2,18 +2,26 @@
 <resources>
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
+    <color name="black">#050505</color>
     <color name="colorAccent">#D81B60</color>
     <color name="Blue">#3F51B5</color>
     <color name="purple">#606BCE</color>
     <color name="purple_100">#959DE4</color>
     <color name="pink">#f469a9</color>
     <color name="blue">#88bef5</color>
-    <color name="black_30">#4D000000</color>
+    <color name="gray">#4D000000</color>
+    <color name="lightgray">#E5E5E5</color>
     <color name="white">#FFFFFFFF</color>
     <color name="pastel_purple">#b19cd9</color>
     <color name="pastel_pink">#F2d0ca</color>
 
     <color name="pastel_blue">#79d2e6</color>
+
+
+    <color name="gradient_start_color">#4c84ff</color>
+    <color name="gradient_end_color">#18a3fe</color>
+
+
 
 
 </resources>

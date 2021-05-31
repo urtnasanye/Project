@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:left="-190dp"
-        android:right="-190dp"
-        android:top="-110dp"
+        android:left="-200dp"
+        android:right="-200dp"
+        android:bottom="-110dp"
         >
         <shape
             xmlns:android="http://schemas.android.com/apk/res/android"

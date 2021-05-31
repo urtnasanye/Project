@@ -26,7 +26,7 @@ class PageFragment : Fragment() {
             R.layout.second_page
         }else if (position ==3){
             R.layout.third_page
-        }else if(position ==4){
+       }else if(position ==4){
             R.layout.activity_register_user
         }
         else R.layout.fragment_page_number
@@ -68,13 +68,13 @@ class PageFragment : Fragment() {
 //                    (0.1686274558 * 255).toInt()
 //                )
 //            )
-            else -> view.setBackgroundColor(
-                Color.rgb(
-                    (Math.random() * 255).toInt(),
-                    (Math.random() * 255).toInt(),
-                    (Math.random() * 255).toInt()
-                )
-            )
+//            else -> view.setBackgroundColor(
+//                Color.rgb(
+//                    (Math.random() * 255).toInt(),
+//                    (Math.random() * 255).toInt(),
+//                    (Math.random() * 255).toInt()
+//                )
+//            )
         }
 
     }

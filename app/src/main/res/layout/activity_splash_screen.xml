@@ -49,17 +49,16 @@
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottie"
-        android:layout_width="406dp"
-        android:layout_height="501dp"
+        android:layout_width="385dp"
+        android:layout_height="401dp"
         android:elevation="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.264"
+        app:layout_constraintVertical_bias="0.116"
         app:lottie_autoPlay="true"
-        app:lottie_rawRes="@raw/search_security" />
+        app:lottie_rawRes="@raw/skup_logo_animation" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CV_activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="19dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/back_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.09"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="70dp"
+            android:text="Хувийн мэдээлэл өөрчлөх"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+
+<LinearLayout
+    android:id="@+id/userProfile"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:src="@tools:sample/avatars" >
+    </ImageView>
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="335dp"
+        android:background="@drawable/camera_icon_shape"
+        android:src="@drawable/camera_icon" />
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="24dp"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Миний Профайл" />
+
+            <TextView
+                android:id="@+id/lastname_username_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Овог,нэр" />
+
+            <EditText
+                android:id="@+id/lastname_username"
+                android:layout_width="348dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cv_btn_shape"
+                android:inputType="text"
+                android:hint="Овог,нэр"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.488"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.281"
+                app:layout_constraintWidth_percent=".8" />
+            <TextView
+                android:id="@+id/main_profession_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Үндсэн мэргэжил" />
+
+            <EditText
+                android:id="@+id/main_profession_edittxt"
+                android:layout_width="348dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cv_btn_shape"
+                android:inputType="text"
+                android:hint="Үндсэн мэргэжил"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.488"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.281"
+                app:layout_constraintWidth_percent=".8" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Цалин" />
+
+            <EditText
+                android:layout_width="348dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cv_btn_shape"
+                android:inputType="number"
+                android:hint="Хүсч буй цалингийн доод хэмжээ"
+                android:paddingLeft="20dp"
+                android:drawableEnd="@drawable/money_icon"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.488"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.281"
+                app:layout_constraintWidth_percent=".8" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Хугацаа" />
+
+            <EditText
+                android:id="@+id/join_Date"
+                android:layout_width="348dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cv_btn_shape"
+                android:inputType="date"
+                android:hint="Ажилд орох боломжтой хугацаа"
+                android:paddingLeft="20dp"
+                android:drawableEnd="@drawable/calendar_icon"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.488"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.281"
+                app:layout_constraintWidth_percent=".8" />
+
+            <TextView
+                android:id="@+id/knowledge_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:text="Ерөнхий мэдлэг" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Боловсролын түвшин" />
+
+            <EditText
+                android:layout_width="348dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cv_btn_shape"
+                android:inputType="date"
+                android:hint=""
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="10dp"
+                android:drawableRight="@drawable/more_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.488"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.281"
+                app:layout_constraintWidth_percent=".8" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Англи хэл" />
+
+            <EditText
+                android:layout_width="348dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cv_btn_shape"
+                android:inputType="date"
+                android:hint=""
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="10dp"
+                android:drawableRight="@drawable/more_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.488"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.281"
+                app:layout_constraintWidth_percent=".8" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Компьютерийн мэдлэг" />
+
+            <EditText
+                android:layout_width="348dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cv_btn_shape"
+                android:inputType="date"
+                android:hint=""
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="10dp"
+                android:drawableRight="@drawable/more_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.488"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.281"
+                app:layout_constraintWidth_percent=".8" />
+                <TextView
+                    android:id="@+id/nemelt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:text="Нэмэлт мэдээлэл" />
+
+
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/custom_switch_background_main"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.124"
+                        tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="Төрсөн огноо" />
+
+                <EditText
+                    android:id="@+id/birth_Date"
+                    android:layout_width="348dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cv_btn_shape"
+                    android:inputType="date"
+                    android:hint="dd-mm-yy"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.488"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.281"
+                    app:layout_constraintWidth_percent=".8" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/relationship"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/custom_switch_background_main"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.124"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="Ам бүл" />
+
+                <EditText
+                    android:layout_width="348dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cv_btn_shape"
+                    android:inputType="number"
+                    android:hint="Ам бүл"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.488"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.281"
+                    app:layout_constraintWidth_percent=".8" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="Жолоодох эрх" />
+
+                <EditText
+                    android:layout_width="348dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cv_btn_shape"
+                    android:hint=""
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="10dp"
+                    android:drawableRight="@drawable/more_icon"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.488"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.281"
+                    app:layout_constraintWidth_percent=".8" />
+
+                <TextView
+                    android:id="@+id/contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:text="Холбоо барих" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="Утас" />
+
+                <EditText
+                    android:layout_width="348dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cv_btn_shape"
+                    android:inputType="phone"
+                    android:hint="Утас"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="10dp"
+                    android:drawableEnd="@drawable/phone_icon"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.488"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.281"
+                    app:layout_constraintWidth_percent=".8" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="И-мэйл" />
+
+                <EditText
+                    android:layout_width="348dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cv_btn_shape"
+                    android:inputType="textEmailAddress"
+                    android:hint="И-мэйл"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="10dp"
+                    android:drawableEnd="@drawable/email_icon"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.488"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.281"
+                    app:layout_constraintWidth_percent=".8" >
+
+
+                </EditText>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="Хаяг" />
+
+                <EditText
+                    android:layout_width="348dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cv_btn_shape"
+                    android:inputType="text"
+                    android:hint="Хаяг"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="10dp"
+                    android:drawableEnd="@drawable/location_icon"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.488"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.281"
+                    app:layout_constraintWidth_percent=".8" />
+
+                <TextView
+                    android:id="@+id/education"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:text="Боловсрол" />
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="12dp"
+                    android:text="Та өөрийн боловсролын талаар энд оруулна уу." />
+
+                <LinearLayout
+                    android:id="@+id/education_paragraph"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageButton
+                        android:id="@+id/addBtn"
+                        android:layout_width="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@color/purple"
+                        android:src="@drawable/add_icon" />
+
+
+                    <TextView
+                        android:id="@+id/add_education"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:textColor="@color/purple"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:text="Боловсрол нэмэх" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ajliin_turshlaga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:text="Ажлын туршлага" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Та өөрийн ажлын туршлагын талаар энд оруулна уу." />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageButton
+                        android:layout_width="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/purple"
+                        android:src="@drawable/add_icon" />
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:textColor="@color/purple"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:text="Туршлага нэмэх" />
+
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:text="Ур чадвар" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Та өөрийн ур чадварын талаар энд оруулна уу." />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageButton
+                        android:layout_width="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/purple"
+                        android:src="@drawable/add_icon" />
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:textColor="@color/purple"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:text="Ур чадвар нэмэх" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:text="Гавьяа,шагнал" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Та өөрийн гавьяа,шагнал талаар энд оруулна уу." />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50dp"
+                    >
+                    <ImageButton
+                        android:layout_width="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/purple"
+                        android:src="@drawable/add_icon" />
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:textColor="@color/purple"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:text="Шагнал нэмэх" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="24dp"
+    android:layout_marginBottom="15dp">
+<Button
+    android:id="@+id/CancelBtn"
+    android:layout_width="140dp"
+    android:layout_height="40dp"
+    android:background="@drawable/company_register_background"
+    android:text="Цуцлах"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    android:layout_marginRight="5dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.508"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.816"
+    app:layout_constraintWidth_percent=".8" />
+        <Button
+            android:id="@+id/SaveBtn"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:background="@drawable/company_register_background"
+            android:text="Хадгалах"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.816"
+            app:layout_constraintWidth_percent=".8" />
+
+
+</LinearLayout>
+
+</LinearLayout>
+</LinearLayout>
